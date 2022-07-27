@@ -1,0 +1,174 @@
+---
+documentclass: report
+header-includes:
+   - \usepackage[default]{sourcesanspro}
+   - \usepackage[T1]{fontenc}
+   - \usepackage{titling}
+   - \usepackage[center]{titlesec}
+   - \usepackage{graphicx}
+   - \usepackage{tcolorbox}
+   - \usepackage[UKenglish]{datetime}
+   - \tcbuselibrary{skins,hooks}
+   - \usepackage[a4paper,onecolumn,left=0.7cm,right=0.7cm,top=1.4cm,bottom=1.4cm,includefoot]{geometry}
+   - \usepackage{fancyhdr}
+   - \usepackage{graphbox}
+   - \pagestyle{fancy}
+   - \fancyhf{}
+   - \fancyhead{}
+   - \fancyfoot{}
+   - \setlength\headheight{45.5pt}
+   - \setlength\footskip{34.3682pt}
+   - \setlength{\droptitle}{-4cm}
+   - \pretitle{\begin{center}
+   - \vspace*{2\baselineskip}}
+   - \fancyhead[L]{\includegraphics[width=4cm,height=3cm]{ICSLogo.jpg}}
+   - \vspace*{2\baselineskip} 
+   - \posttitle{\end{center}}
+   - \rhead[C]{\fontsize{18}{18}\selectfont\textbf{Nottinghamshire ICS Vaccine Uptake Report}}
+   - \renewcommand{\headrulewidth}{0.5pt}
+   - \renewcommand{\footrulewidth}{0.5pt}
+   - \renewcommand\footrule{\centering\noindent\resizebox{1\textwidth}{!}{\includegraphics[width=1\paperwidth]{FootRule.png}}}
+   - \fancyfoot[L]{\parbox[b][7mm][t]{0\textwidth}{\includegraphics[width=5cm,height=2cm]{FooterLeft.png}}}
+   - \fancyfoot[C]{\parbox[b][7mm][t]{0\textwidth}{\raggedleft\fontsize{8}{8}\selectfont\textbf\thepage}}
+   - \fancyfoot[R]{\includegraphics[width=4cm,height=2cm]{NottsCCG.jpg}}
+   - \begin{document}
+   - \vspace*{-6\baselineskip}
+   - \newdateformat{UKvardate}{\THEDAY\ \monthname[\THEMONTH], \THEYEAR}
+   - \UKvardate
+   - \phantomsection
+   - \hypersetup{bookmarksdepth=1}
+   - \section{\fontsize{13}{13}\selectfont\textbf{City Hotspots for Unvaccinated People 16+ Yrs (non-declines).}}
+   
+   - \hypersetup{bookmarksdepth=-1}
+   - \vspace*{-1.2\baselineskip}   
+   - \subsection{\fontsize{11}{11}\selectfont\textbf{\today}}
+
+   - \begin{figure}
+   - \vspace*{-1\baselineskip} 
+   - \centering
+   
+   - \begin{minipage}[t]{.45\pdfpagewidth}
+   - \begin{tcolorbox}[boxrule=0.5pt,sharp corners,colback=white,boxsep=-0mm,width=.45\pdfpagewidth,height = 0.06\pdfpageheight]
+   - \section{\fontsize{9}{9}\selectfont\textbf{Unvaccinated People Aged 16+ Yrs (non-declines) by LSOA.}}
+   - \end{tcolorbox}
+   - \vspace*{-1.2\baselineskip}
+   - \begin{tcolorbox}[enhanced,watermark graphics=map_City11_5.png,watermark stretch=0.998,boxrule=0.75pt,sharp corners,colback=white,boxsep=-0mm,width=.45\pdfpagewidth, height = 0.6\pdfpageheight]
+   - \end{tcolorbox}
+   
+   - \vspace*{-0.6\baselineskip}  
+   - \begin{tcolorbox}[boxrule=0.5pt,sharp corners,colback=white,boxsep=-0mm,width=.45\pdfpagewidth,height = 0.08\pdfpageheight]
+   - \begin{flushleft}
+   - \fontsize{9}{9}\selectfont\normalfont{The Nottingham City area has more unvaccinated people than Nottingham County. Within Nottingham City, Radford remains the area with the highest number of unvaccinated people.}
+   - \end{flushleft}
+   - \end{tcolorbox}
+   - \vspace*{-0.6\baselineskip} 
+   - \end{minipage}
+   
+   - \hspace{1.5\baselineskip}
+   
+   - \begin{minipage}[t]{.45\pdfpagewidth}
+   - \begin{tcolorbox}[boxrule=0.5pt,sharp corners,colback=white,boxsep=-0mm,width=.45\pdfpagewidth,height = 0.06\pdfpageheight]
+   - \section{\fontsize{9}{9}\selectfont\textbf{Unvaccinated People Aged 16+ Yrs (non-declines) Heatmap (Kernel Density Estimation).}}
+   - \end{tcolorbox} 
+   - \vspace*{-1.2\baselineskip}
+   - \begin{tcolorbox}[enhanced,watermark graphics=map_CityKD11_5.png,watermark stretch=0.998,boxrule=0.75pt,sharp corners,colback=white,boxsep=-0mm,width=.45\pdfpagewidth, height = 0.6\pdfpageheight]
+   - \end{tcolorbox}
+   
+   - \vspace*{-0.6\baselineskip}  
+   - \begin{tcolorbox}[boxrule=0.5pt,sharp corners,colback=white,boxsep=-0mm,width=.45\pdfpagewidth,height = 0.08\pdfpageheight]
+   - \begin{flushleft}
+   - \fontsize{9}{9}\selectfont\normalfont{}
+   - \end{flushleft}
+   - \end{tcolorbox}
+   - \vspace*{-0.6\baselineskip} 
+   - \end{minipage}
+   - \vspace*{-3.5\baselineskip} 
+   - \end{figure}
+   
+   - \clearpage
+   - \newpage
+   - \vspace*{-4\baselineskip}
+   
+   - \phantomsection
+   - \hypersetup{bookmarksdepth=1}
+   - \section{\fontsize{13}{13}\selectfont\textbf{County Hotspots for Unvaccinated People 16+ Yrs (non-declines).}}
+   
+   - \hypersetup{bookmarksdepth=-1}
+   - \vspace*{-1.2\baselineskip}   
+   - \subsection{\fontsize{11}{11}\selectfont\textbf{\today}}
+
+   - \begin{figure}
+   - \vspace*{-1\baselineskip} 
+   - \centering
+   
+   - \begin{minipage}[t]{.45\pdfpagewidth}
+   - \begin{tcolorbox}[boxrule=0.5pt,sharp corners,colback=white,boxsep=-0mm,width=.45\pdfpagewidth,height = 0.06\pdfpageheight]
+   - \section{\fontsize{9}{9}\selectfont\textbf{Unvaccinated People Aged 16+ Yrs (non-declines) by LSOA.}}
+   - \end{tcolorbox}
+   - \vspace*{-1.2\baselineskip}
+   - \begin{tcolorbox}[enhanced,watermark graphics=map_County10.png,watermark stretch=0.998,boxrule=0.75pt,sharp corners,colback=white,boxsep=-0mm,width=.45\pdfpagewidth, height = 0.6\pdfpageheight]
+   - \end{tcolorbox}
+   
+   - \vspace*{-0.6\baselineskip}  
+   - \begin{tcolorbox}[boxrule=0.5pt,sharp corners,colback=white,boxsep=-0mm,width=.45\pdfpagewidth,height = 0.08\pdfpageheight]
+   - \begin{flushleft}
+   - \fontsize{9}{9}\selectfont\normalfont{The City area has the highest number of unvaccinated people. The areas on the map more than 5 miles from a vaccination site have very low numbers of unvaccinated people.}
+   - \end{flushleft}
+   - \end{tcolorbox}
+   - \vspace*{-0.6\baselineskip} 
+   - \end{minipage}
+   
+   - \hspace{1.5\baselineskip}
+   
+   - \begin{minipage}[t]{.45\pdfpagewidth}
+   - \begin{tcolorbox}[boxrule=0.5pt,sharp corners,colback=white,boxsep=-0mm,width=.45\pdfpagewidth,height = 0.06\pdfpageheight]
+   - \section{\fontsize{9}{9}\selectfont\textbf{Unvaccinated People Aged 16+ Yrs (non-declines) Heatmap (Kernel Density Estimation).}}
+   - \end{tcolorbox} 
+   - \vspace*{-1.2\baselineskip}
+   - \begin{tcolorbox}[enhanced,watermark graphics=map_CountyKD11_5.png,watermark stretch=0.998,boxrule=0.75pt,sharp corners,colback=white,boxsep=-0mm,width=.45\pdfpagewidth, height = 0.6\pdfpageheight]
+   - \end{tcolorbox}
+   
+   - \vspace*{-0.6\baselineskip}  
+   - \begin{tcolorbox}[boxrule=0.5pt,sharp corners,colback=white,boxsep=-0mm,width=.45\pdfpagewidth,height = 0.08\pdfpageheight]
+   - \begin{flushleft}
+   - \fontsize{9}{9}\selectfont\normalfont{}
+   - \end{flushleft}
+   - \end{tcolorbox}
+   - \vspace*{-0.6\baselineskip} 
+   - \end{minipage}
+   - \vspace*{-3.5\baselineskip} 
+   - \end{figure}
+
+   - \clearpage
+   - \newpage
+   - \vspace*{-4\baselineskip}
+   
+   - \phantomsection
+   - \hypersetup{bookmarksdepth=1}
+   - \section{\fontsize{13}{13}\selectfont\textbf{Planned Vaccination Site List}}
+   
+   - \hypersetup{bookmarksdepth=-1}
+   - \vspace*{-1.2\baselineskip}   
+   - \subsection{\fontsize{11}{11}\selectfont\textbf{\today}}
+
+   - \begin{figure}
+   - \vspace*{-0.5\baselineskip} 
+   - \centering
+   - \includegraphics[width=.6\pdfpagewidth,height = 0.8\pdfpageheight,trim=4 4 4 4,clip]{SitesTable.png} 
+   - \vspace*{-3.5\baselineskip} 
+   - \end{figure}
+
+   - \end{document}
+mainfont: SourceSansPro
+sansfont: SourceSansPro
+monofont: SourceSansPro
+fontsize: 12pt
+output:
+  pdf_document:
+   toc: false
+papersize: a4
+classoption: 
+  - landscape
+  - a4paper
+---
+
